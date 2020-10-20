@@ -9,7 +9,7 @@ Rest API done with .NET WebAPI
 
 Technologies Used
 
-1. ASP.NET MVC
+1. C# ASP.NET MVC
 2. Javascript / JQuery
 3. MySQL Database
 4. HTML5
