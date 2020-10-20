@@ -1,0 +1,65 @@
+﻿@model IEnumerable<JamboPayInterview.Models.TransactionsModel>
+@{
+    ViewBag.Title = "View_Transactions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var sno = 0;
+}
+<section class="content container-fluid">
+    <div class="panel panel-default" style="margin-top:10px;">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong>Transactions</strong>
+                        @if (!Model.Any())
+                        {
+                        <div class="alert alert-danger">No transactions found</div>
+                        }
+                        else
+                        {
+                        <table class="table table-striped custom-table m-b-0 vendortable">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Supporter</th>
+                                <th>Ambassador</th>
+                                <th>Transaction Cost (KES)</th>
+                                <th>Commission (KES)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in Model)
+                            {
+                                sno++;
+                                <tr>
+                                    <td>
+                                        @sno
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.supporter_id)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ambassador_id)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.transaction_cost)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ambassador_commission)
+                                    </td>
+
+                                </tr>
+                            }
+                            </tbody>
+
+                        </table>
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

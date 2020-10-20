@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Register_User";
+    Layout = "~/Views/Shared/_Account_Layout.cshtml";
+}
+
+<div class="content">
+<div class="panel panel-table">
+<div class="account-logo">
+    <a href="/Home/Login"><img src="/assets/img/logo.png" alt="JamboPay"></a>
+</div>
+
+<br/>
+
+<div class="panel-body">
+    <form action="" method="post">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h4><strong style="color: chocolate"> Ambassador Registration Form</strong></h4>
+                <br/>
+                <span id="feedbackMsg" style="display: none"></span><br />
+            </div>
+            <div class="col-md-3"></div>
+           
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <div class="form-group form-focus">
+                <label class="control-label">First Name </label>
+                <input class="form-control floating" type="text" id="txtAmbfName" onkeypress="inputLimit(this, 20);"
+                       ondrop="return false;" onpaste="return false;">
+            </div>
+
+            <div class="form-group form-focus">
+                <label class="control-label">Last Name </label>
+                <input class="form-control floating" type="text" id="txtAmbLName" onkeypress="inputLimit(this, 20);"
+                       ondrop="return false;" onpaste="return false;">
+            </div>
+
+            <div class="form-group form-focus">
+                <label class="control-label">Phone Number</label>
+                <input class="form-control floating" type="text" id="txtPhonenumberAmb">
+                <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+            </div>
+            <div class="form-group form-focus">
+                <label class="control-label">ID Number</label>
+                <input class="form-control floating" type="text" id="txtIDNoinAmb">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group form-focus">
+                <label class="control-label">Email Address</label>
+                <input class="form-control floating" type="text" id="txtEmailAddAmb" >
+                <span class="fas fa-at form-control-feedback"></span>
+            </div>
+
+            <div class="form-group form-focus">
+                <label class="control-label">Password</label>
+                <input class="form-control floating" type="password" id="txtPass1Amb">
+                <span class="fas fa-key form-control-feedback"></span>
+            </div>
+            <div class="form-group form-focus">
+                <label class="control-label">Repeat Password</label>
+                <input class="form-control floating" type="password" id="txtPass2Amb">
+                <span class="fas fa-key form-control-feedback"></span>
+            </div>
+
+            <button class="btn btn-primary rounded pull-left btn-sm" id="btnRegister" style="text-transform: uppercase !important; color: white; border: 0">
+                <i class="fas fa-user-plus" id="regfavicon2"></i>&nbsp;Create Ambassador Account
+            </button>
+
+            <span class="btn btn-primary rounded pull-right btn-sm">
+                <i class="fas fa-arrow-circle-left"></i>&nbsp; <a href="/Home/Login" style="background: none; border: 0"><strong>Back</strong></a>
+            </span>
+        </div>
+        <div class="col-md-3"></div>
+
+
+    </form>
+
+<div id="overlay">
+    <div class="cv-spinner">
+        <span class="spinner"></span>
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+

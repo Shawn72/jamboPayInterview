@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Post_Transactions";
+    Layout = "~/Views/Shared/_Layout_Supporter.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="panel panel-default" style="margin-top:10px;">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-body">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <h4><strong style="color: chocolate"> Supporter Transactions Form</strong></h4>
+                                        <br />
+                                        <span id="feedbackMsg" style="display: none"></span><br />
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3">
+                                    <h4> <strong style="color: chocolate">Select Service</strong></h4>
+                                    <div class="form-group form-focus">
+                                        <select name="servicetype"  id="servicetype" class="form-group form-focus selectpicker" data_live_search="true">
+                                            <option value="2">Electricity</option>
+                                            <option value="3">Water</option>
+                                            <option value="5">Airtime</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Enter Service Fee</label>
+                                        <input class="form-control floating" type="number" id="txtServiceFee">
+                                    </div>
+                                    
+                                    <div class="form-group form-focus">
+                                        <button class="btn btn-primary rounded pull-left btn-sm" id="btnGetCommision" style="text-transform: uppercase !important; color: white; border: 0">
+                                           See Commision (KES)
+                                        </button>
+                                    </div>
+
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Commision</label>
+                                        <input class="form-control floating" type="text" id="txtCommission" readonly="readonly">
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary rounded pull-left btn-sm" id="btnSaveCommission" style="text-transform: uppercase !important; color: white; border: 0">
+                                        <i class="fas fa-user-plus" id="regfavicon2"></i>&nbsp;Post Commision
+                                    </button>
+
+                                </div>
+                                <div class="col-md-3"></div>
+                            </form>
+
+                            <div id="overlay">
+                                <div class="cv-spinner">
+                                    <span class="spinner"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

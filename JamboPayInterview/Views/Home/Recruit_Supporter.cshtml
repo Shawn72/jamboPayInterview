@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Recruit_Supporter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content container-fluid">
+    <div class="panel panel-default" style="margin-top:10px;">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong>Recruit new supporter</strong>
+                    
+                        <div class="panel-body">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <h4><strong style="color: chocolate"> Supporter Registration Form</strong></h4>
+                                        <br/>
+                                        <span id="feedbackMsg" style="display: none"></span><br />
+                                    </div>
+                                    <div class="col-md-3"></div>
+           
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3">
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">First Name </label>
+                                        <input class="form-control floating" type="text" id="txtSuppfName" onkeypress="inputLimit(this, 20);"
+                                               ondrop="return false;" onpaste="return false;">
+                                    </div>
+
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Last Name </label>
+                                        <input class="form-control floating" type="text" id="txtSuppLName" onkeypress="inputLimit(this, 20);"
+                                               ondrop="return false;" onpaste="return false;">
+                                    </div>
+
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Phone Number</label>
+                                        <input class="form-control floating" type="text" id="txtPhonenumberSupp">
+                                        <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">ID Number</label>
+                                        <input class="form-control floating" type="text" id="txtIDNoinSupp">
+                                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Email Address</label>
+                                        <input class="form-control floating" type="text" id="txtEmailAddSupp" >
+                                        <span class="fas fa-at form-control-feedback"></span>
+                                    </div>
+
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Password</label>
+                                        <input class="form-control floating" type="password" id="txtPass1Supp">
+                                        <span class="fas fa-key form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group form-focus">
+                                        <label class="control-label">Repeat Password</label>
+                                        <input class="form-control floating" type="password" id="txtPass2Supp">
+                                        <span class="fas fa-key form-control-feedback"></span>
+                                    </div>
+
+                                    <button class="btn btn-primary rounded pull-left btn-sm" id="btnRegisterSuppt" style="text-transform: uppercase !important; color: white; border: 0">
+                                        <i class="fas fa-user-plus" id="regfavicon2"></i>&nbsp;Create Supporter Account
+                                    </button>
+                                   
+                                </div>
+                                <div class="col-md-3"></div>
+                            </form>
+
+                            <div id="overlay">
+                                <div class="cv-spinner">
+                                    <span class="spinner"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+
+    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+

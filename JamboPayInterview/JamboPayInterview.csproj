@@ -44,14 +44,67 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.1.0.1\lib\net45\MySqlConnector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.0\lib\netstandard1.1\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -102,6 +155,10 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -109,6 +166,10 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.21\lib\net452\Zstandard.Net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -124,17 +185,363 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommissionModel.cs" />
+    <Compile Include="Models\SignUpModel.cs" />
+    <Compile Include="Models\SupporterModel.cs" />
+    <Compile Include="Models\TransactionsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="assets\css\bootstrap-select.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\customprofile.css" />
+    <Content Include="assets\css\customstylesheet.css" />
+    <Content Include="assets\css\dataTables.bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\fullcalendar.min.css" />
+    <Content Include="assets\css\line-awesome.min.css" />
+    <Content Include="assets\css\loadercss.css" />
+    <Content Include="assets\css\select2.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\customassets\buttonClicks.js" />
+    <Content Include="assets\customassets\jsFunctions.js" />
+    <Content Include="assets\customassets\myCustomscripts.js" />
+    <Content Include="assets\customassets\sessions\timeout-dialog.css" />
+    <Content Include="assets\customassets\sessions\timeout-dialog.js" />
+    <Content Include="assets\customassets\sessions\timeout-icon.png" />
+    <Content Include="assets\flags\ad.png" />
+    <Content Include="assets\flags\ae.png" />
+    <Content Include="assets\flags\af.png" />
+    <Content Include="assets\flags\ag.png" />
+    <Content Include="assets\flags\ai.png" />
+    <Content Include="assets\flags\al.png" />
+    <Content Include="assets\flags\am.png" />
+    <Content Include="assets\flags\an.png" />
+    <Content Include="assets\flags\ao.png" />
+    <Content Include="assets\flags\aq.png" />
+    <Content Include="assets\flags\ar.png" />
+    <Content Include="assets\flags\as.png" />
+    <Content Include="assets\flags\at.png" />
+    <Content Include="assets\flags\au.png" />
+    <Content Include="assets\flags\aw.png" />
+    <Content Include="assets\flags\ax.png" />
+    <Content Include="assets\flags\az.png" />
+    <Content Include="assets\flags\ba.png" />
+    <Content Include="assets\flags\bb.png" />
+    <Content Include="assets\flags\bd.png" />
+    <Content Include="assets\flags\be.png" />
+    <Content Include="assets\flags\bf.png" />
+    <Content Include="assets\flags\bg.png" />
+    <Content Include="assets\flags\bh.png" />
+    <Content Include="assets\flags\bi.png" />
+    <Content Include="assets\flags\bj.png" />
+    <Content Include="assets\flags\bm.png" />
+    <Content Include="assets\flags\bn.png" />
+    <Content Include="assets\flags\bo.png" />
+    <Content Include="assets\flags\br.png" />
+    <Content Include="assets\flags\bs.png" />
+    <Content Include="assets\flags\bt.png" />
+    <Content Include="assets\flags\bv.png" />
+    <Content Include="assets\flags\bw.png" />
+    <Content Include="assets\flags\by.png" />
+    <Content Include="assets\flags\bz.png" />
+    <Content Include="assets\flags\ca.png" />
+    <Content Include="assets\flags\catalonia.png" />
+    <Content Include="assets\flags\cc.png" />
+    <Content Include="assets\flags\cd.png" />
+    <Content Include="assets\flags\cf.png" />
+    <Content Include="assets\flags\cg.png" />
+    <Content Include="assets\flags\ch.png" />
+    <Content Include="assets\flags\ci.png" />
+    <Content Include="assets\flags\ck.png" />
+    <Content Include="assets\flags\cl.png" />
+    <Content Include="assets\flags\cm.png" />
+    <Content Include="assets\flags\cn.png" />
+    <Content Include="assets\flags\co.png" />
+    <Content Include="assets\flags\cr.png" />
+    <Content Include="assets\flags\cs.png" />
+    <Content Include="assets\flags\cu.png" />
+    <Content Include="assets\flags\cv.png" />
+    <Content Include="assets\flags\cx.png" />
+    <Content Include="assets\flags\cy.png" />
+    <Content Include="assets\flags\cz.png" />
+    <Content Include="assets\flags\de.png" />
+    <Content Include="assets\flags\dj.png" />
+    <Content Include="assets\flags\dk.png" />
+    <Content Include="assets\flags\dm.png" />
+    <Content Include="assets\flags\do.png" />
+    <Content Include="assets\flags\dz.png" />
+    <Content Include="assets\flags\ec.png" />
+    <Content Include="assets\flags\ee.png" />
+    <Content Include="assets\flags\eg.png" />
+    <Content Include="assets\flags\eh.png" />
+    <Content Include="assets\flags\england.png" />
+    <Content Include="assets\flags\er.png" />
+    <Content Include="assets\flags\es.png" />
+    <Content Include="assets\flags\et.png" />
+    <Content Include="assets\flags\europeanunion.png" />
+    <Content Include="assets\flags\fam.png" />
+    <Content Include="assets\flags\fi.png" />
+    <Content Include="assets\flags\fj.png" />
+    <Content Include="assets\flags\fk.png" />
+    <Content Include="assets\flags\fm.png" />
+    <Content Include="assets\flags\fo.png" />
+    <Content Include="assets\flags\fr.png" />
+    <Content Include="assets\flags\ga.png" />
+    <Content Include="assets\flags\gb.png" />
+    <Content Include="assets\flags\gd.png" />
+    <Content Include="assets\flags\ge.png" />
+    <Content Include="assets\flags\gf.png" />
+    <Content Include="assets\flags\gg.png" />
+    <Content Include="assets\flags\gh.png" />
+    <Content Include="assets\flags\gi.png" />
+    <Content Include="assets\flags\gl.png" />
+    <Content Include="assets\flags\gm.png" />
+    <Content Include="assets\flags\gn.png" />
+    <Content Include="assets\flags\gp.png" />
+    <Content Include="assets\flags\gq.png" />
+    <Content Include="assets\flags\gr.png" />
+    <Content Include="assets\flags\gs.png" />
+    <Content Include="assets\flags\gt.png" />
+    <Content Include="assets\flags\gu.png" />
+    <Content Include="assets\flags\gw.png" />
+    <Content Include="assets\flags\gy.png" />
+    <Content Include="assets\flags\hk.png" />
+    <Content Include="assets\flags\hm.png" />
+    <Content Include="assets\flags\hn.png" />
+    <Content Include="assets\flags\hr.png" />
+    <Content Include="assets\flags\ht.png" />
+    <Content Include="assets\flags\hu.png" />
+    <Content Include="assets\flags\id.png" />
+    <Content Include="assets\flags\ie.png" />
+    <Content Include="assets\flags\il.png" />
+    <Content Include="assets\flags\im.png" />
+    <Content Include="assets\flags\in.png" />
+    <Content Include="assets\flags\io.png" />
+    <Content Include="assets\flags\iq.png" />
+    <Content Include="assets\flags\ir.png" />
+    <Content Include="assets\flags\is.png" />
+    <Content Include="assets\flags\it.png" />
+    <Content Include="assets\flags\je.png" />
+    <Content Include="assets\flags\jm.png" />
+    <Content Include="assets\flags\jo.png" />
+    <Content Include="assets\flags\jp.png" />
+    <Content Include="assets\flags\ke.png" />
+    <Content Include="assets\flags\kg.png" />
+    <Content Include="assets\flags\kh.png" />
+    <Content Include="assets\flags\ki.png" />
+    <Content Include="assets\flags\km.png" />
+    <Content Include="assets\flags\kn.png" />
+    <Content Include="assets\flags\kp.png" />
+    <Content Include="assets\flags\kr.png" />
+    <Content Include="assets\flags\kw.png" />
+    <Content Include="assets\flags\ky.png" />
+    <Content Include="assets\flags\kz.png" />
+    <Content Include="assets\flags\la.png" />
+    <Content Include="assets\flags\lb.png" />
+    <Content Include="assets\flags\lc.png" />
+    <Content Include="assets\flags\li.png" />
+    <Content Include="assets\flags\lk.png" />
+    <Content Include="assets\flags\lr.png" />
+    <Content Include="assets\flags\ls.png" />
+    <Content Include="assets\flags\lt.png" />
+    <Content Include="assets\flags\lu.png" />
+    <Content Include="assets\flags\lv.png" />
+    <Content Include="assets\flags\ly.png" />
+    <Content Include="assets\flags\ma.png" />
+    <Content Include="assets\flags\mc.png" />
+    <Content Include="assets\flags\md.png" />
+    <Content Include="assets\flags\me.png" />
+    <Content Include="assets\flags\mg.png" />
+    <Content Include="assets\flags\mh.png" />
+    <Content Include="assets\flags\mk.png" />
+    <Content Include="assets\flags\ml.png" />
+    <Content Include="assets\flags\mm.png" />
+    <Content Include="assets\flags\mn.png" />
+    <Content Include="assets\flags\mo.png" />
+    <Content Include="assets\flags\mp.png" />
+    <Content Include="assets\flags\mq.png" />
+    <Content Include="assets\flags\mr.png" />
+    <Content Include="assets\flags\ms.png" />
+    <Content Include="assets\flags\mt.png" />
+    <Content Include="assets\flags\mu.png" />
+    <Content Include="assets\flags\mv.png" />
+    <Content Include="assets\flags\mw.png" />
+    <Content Include="assets\flags\mx.png" />
+    <Content Include="assets\flags\my.png" />
+    <Content Include="assets\flags\mz.png" />
+    <Content Include="assets\flags\na.png" />
+    <Content Include="assets\flags\nc.png" />
+    <Content Include="assets\flags\ne.png" />
+    <Content Include="assets\flags\nf.png" />
+    <Content Include="assets\flags\ng.png" />
+    <Content Include="assets\flags\ni.png" />
+    <Content Include="assets\flags\nl.png" />
+    <Content Include="assets\flags\no.png" />
+    <Content Include="assets\flags\np.png" />
+    <Content Include="assets\flags\nr.png" />
+    <Content Include="assets\flags\nu.png" />
+    <Content Include="assets\flags\nz.png" />
+    <Content Include="assets\flags\om.png" />
+    <Content Include="assets\flags\pa.png" />
+    <Content Include="assets\flags\pe.png" />
+    <Content Include="assets\flags\pf.png" />
+    <Content Include="assets\flags\pg.png" />
+    <Content Include="assets\flags\ph.png" />
+    <Content Include="assets\flags\pk.png" />
+    <Content Include="assets\flags\pl.png" />
+    <Content Include="assets\flags\pm.png" />
+    <Content Include="assets\flags\pn.png" />
+    <Content Include="assets\flags\pr.png" />
+    <Content Include="assets\flags\ps.png" />
+    <Content Include="assets\flags\pt.png" />
+    <Content Include="assets\flags\pw.png" />
+    <Content Include="assets\flags\py.png" />
+    <Content Include="assets\flags\qa.png" />
+    <Content Include="assets\flags\re.png" />
+    <Content Include="assets\flags\ro.png" />
+    <Content Include="assets\flags\rs.png" />
+    <Content Include="assets\flags\ru.png" />
+    <Content Include="assets\flags\rw.png" />
+    <Content Include="assets\flags\sa.png" />
+    <Content Include="assets\flags\sb.png" />
+    <Content Include="assets\flags\sc.png" />
+    <Content Include="assets\flags\scotland.png" />
+    <Content Include="assets\flags\sd.png" />
+    <Content Include="assets\flags\se.png" />
+    <Content Include="assets\flags\sg.png" />
+    <Content Include="assets\flags\sh.png" />
+    <Content Include="assets\flags\si.png" />
+    <Content Include="assets\flags\sj.png" />
+    <Content Include="assets\flags\sk.png" />
+    <Content Include="assets\flags\sl.png" />
+    <Content Include="assets\flags\sm.png" />
+    <Content Include="assets\flags\sn.png" />
+    <Content Include="assets\flags\so.png" />
+    <Content Include="assets\flags\sr.png" />
+    <Content Include="assets\flags\st.png" />
+    <Content Include="assets\flags\sv.png" />
+    <Content Include="assets\flags\sy.png" />
+    <Content Include="assets\flags\sz.png" />
+    <Content Include="assets\flags\tc.png" />
+    <Content Include="assets\flags\td.png" />
+    <Content Include="assets\flags\tf.png" />
+    <Content Include="assets\flags\tg.png" />
+    <Content Include="assets\flags\th.png" />
+    <Content Include="assets\flags\tj.png" />
+    <Content Include="assets\flags\tk.png" />
+    <Content Include="assets\flags\tl.png" />
+    <Content Include="assets\flags\tm.png" />
+    <Content Include="assets\flags\tn.png" />
+    <Content Include="assets\flags\to.png" />
+    <Content Include="assets\flags\tr.png" />
+    <Content Include="assets\flags\tt.png" />
+    <Content Include="assets\flags\tv.png" />
+    <Content Include="assets\flags\tw.png" />
+    <Content Include="assets\flags\tz.png" />
+    <Content Include="assets\flags\ua.png" />
+    <Content Include="assets\flags\ug.png" />
+    <Content Include="assets\flags\um.png" />
+    <Content Include="assets\flags\us.png" />
+    <Content Include="assets\flags\uy.png" />
+    <Content Include="assets\flags\uz.png" />
+    <Content Include="assets\flags\va.png" />
+    <Content Include="assets\flags\vc.png" />
+    <Content Include="assets\flags\ve.png" />
+    <Content Include="assets\flags\vg.png" />
+    <Content Include="assets\flags\vi.png" />
+    <Content Include="assets\flags\vn.png" />
+    <Content Include="assets\flags\vu.png" />
+    <Content Include="assets\flags\wales.png" />
+    <Content Include="assets\flags\wf.png" />
+    <Content Include="assets\flags\ws.png" />
+    <Content Include="assets\flags\ye.png" />
+    <Content Include="assets\flags\yt.png" />
+    <Content Include="assets\flags\za.png" />
+    <Content Include="assets\flags\zm.png" />
+    <Content Include="assets\flags\zw.png" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\line-awesomeeb4f.html" />
+    <Content Include="assets\fonts\line-awesomeeb4f.svg" />
+    <Content Include="assets\img\attachment.png" />
+    <Content Include="assets\img\avatar.png" />
+    <Content Include="assets\img\calander.png" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\logo2.png" />
+    <Content Include="assets\img\logo3.png" />
+    <Content Include="assets\img\placeholder.png" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="assets\js\bootstrap-select.min.js" />
+    <Content Include="assets\js\bootstrap-show-password.min.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\chart.js" />
+    <Content Include="assets\js\countrypicker.js" />
+    <Content Include="assets\js\dataTables.bootstrap.min.js" />
+    <Content Include="assets\js\dropfiles.js" />
+    <Content Include="assets\js\fullcalendar.min.js" />
+    <Content Include="assets\js\jquery-3.2.1.min.js" />
+    <Content Include="assets\js\jquery-ui.min.html" />
+    <Content Include="assets\js\jquery.dataTables.min.js" />
+    <Content Include="assets\js\jquery.easing.1.3.js" />
+    <Content Include="assets\js\jquery.fullcalendar.js" />
+    <Content Include="assets\js\jquery.slimscroll.js" />
+    <Content Include="assets\js\moment.min.js" />
+    <Content Include="assets\js\select2.min.js" />
+    <Content Include="assets\js\task.js" />
+    <Content Include="assets\loaders\load.gif" />
+    <Content Include="assets\loaders\no-image.png" />
+    <Content Include="assets\plugins\morris\morris.css" />
+    <Content Include="assets\plugins\morris\morris.min.js" />
+    <Content Include="assets\plugins\raphael\raphael-min.js" />
+    <Content Include="assets\plugins\summernote\dist\summernote.css" />
+    <Content Include="assets\plugins\summernote\dist\summernote.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="ErrorPages\404.html" />
+    <Content Include="ErrorPages\500.html" />
+    <Content Include="ErrorPages\ApplicationError.html" />
+    <Content Include="ErrorPages\BaseError.html" />
+    <Content Include="ErrorPages\GenericError.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\avatar6.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\logo.png" />
+    <Content Include="Profiles\CNT_00985\profpic.png" />
+    <Content Include="Profiles\CNT_01085\profpic.png" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\flags\flags.psd" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assets\fonts\line-awesome0176.eot" />
+    <Content Include="assets\fonts\line-awesomeeb4f.eot" />
+    <Content Include="assets\fonts\line-awesomeeb4f.ttf" />
+    <Content Include="assets\fonts\line-awesomeeb4f.woff" />
+    <Content Include="assets\plugins\summernote\dist\font\summernote291f.eot" />
+    <Content Include="assets\plugins\summernote\dist\font\summernote291f.ttf" />
+    <Content Include="assets\plugins\summernote\dist\font\summernote291f.woff" />
+    <Content Include="assets\plugins\summernote\dist\font\summernoted41d.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -147,6 +554,14 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Uploads\CNT_00985\23J.png" />
+    <Content Include="Uploads\CNT_00985\curry30.jpg" />
+    <Content Include="Uploads\CNT_00985\dre358.jpg" />
+    <Content Include="Uploads\CNT_00985\golden-state-warriors-logo-wallpaper.jpg" />
+    <Content Include="Uploads\CNT_00985\Jordan23.jpg" />
+    <Content Include="Uploads\CNT_00985\JordanCollege.jpg" />
+    <Content Include="Uploads\CNT_00985\NacostiEboradNaivasha recon.txt" />
+    <Content Include="Uploads\CNT_00985\Shawn%402018.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -161,10 +576,38 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Uploads\Bidder Mandatory Requirements\NACOST[58]19[47]20RFQ_0070\VEND1063_CERT OF REGISTRATION.pdf" />
+    <Content Include="Uploads\Bidder Mandatory Requirements\NACOST[58]19[47]20RFQ_0070\VEND1063_CONFIDENTIAL BUSINESS QUESTIONNARE.pdf" />
+    <Content Include="Uploads\Bidder Mandatory Requirements\NACOST[58]19[47]20RFQ_0070\VEND1063_KRAPIN.pdf" />
+    <Content Include="Uploads\Bidder Mandatory Requirements\NACOST[58]19[47]20RFQ_0070\VEND1063_TAX COMPLIANT CERT.pdf" />
+    <Content Include="Uploads\CNT_00985\LONGHORN PORTAL STATUS REPORT.pdf" />
+    <Content Include="Uploads\CNT_00985\Shawn Mbuvi~NACOSTI_SIGNOFF.pdf" />
+    <Content Include="Uploads\CNT_00985\Shawn Mbuvi~Weekly Planner_July_30th.pdf" />
+    <Content Include="Uploads\CNT_00985\Shawn Mbuvi~Weekly Planner_June_17th.pdf" />
+    <Content Include="Uploads\CNT_00985\Shawn Mbuvi~Weekly Planner_Nov_25th.pdf" />
+    <Content Include="Uploads\RfQs\VEND1063\NACOST_19_20RFQ_0064\LONGHORN PORTAL STATUS REPORT.pdf" />
+    <Content Include="Uploads\RfQs\VEND1063\NACOST_19_20RFQ_0064\Shawn Mbuvi~NACOSTI_SIGNOFF.pdf" />
+    <Content Include="Uploads\RfQs\VEND1063\NACOST_19_20RFQ_0064\Shawn Mbuvi~Weekly Planner_July_30th.pdf" />
+    <Content Include="Uploads\RfQs\VEND1063\NACOST_19_20RFQ_0064\Shawn Mbuvi~Weekly Planner_June_17th.pdf" />
+    <Content Include="Views\Shared\_Account_Layout.cshtml" />
+    <Content Include="Views\Shared\_Admin_Layout.cshtml" />
+    <Content Include="Views\Shared\_Navbar_Layout.cshtml" />
+    <Content Include="Views\Home\Register_User.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Index_supporter.cshtml" />
+    <Content Include="Views\Home\Recruit_Supporter.cshtml" />
+    <Content Include="Views\Shared\_Layout_Supporter.cshtml" />
+    <Content Include="Views\Home\Post_Transactions.cshtml" />
+    <Content Include="Views\Home\View_Transactions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Uploads\CNT[58]00985\" />
+    <Folder Include="Uploads\CNT_00985\NCST_19\20DP_0001\" />
+    <Folder Include="Uploads\CNT_00996\" />
+    <Folder Include="Uploads\Profiles\" />
+    <Folder Include="Uploads\VEND0922\" />
+    <Folder Include="Uploads\VEND0974\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,0 +1,14 @@
+
+Add Open link to confirm meeting attendance, click meeting, confirmattendance button and send a notification to meeting organizer
+
+p9 Report number
+69019
+
+89033 payslip nacosti
+
+Board resolutions  56004
+
+enable board members to confirm meetings availability on the portal
+change from "meeting comment" to just "comment"
+
+put a link on board resolution to the board minutes
